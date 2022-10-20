@@ -66,7 +66,7 @@ body{
 
 /* /// Estilos Generales /// */
 
-.container, .wave{
+.container{
     width: 90%;
     max-width: 1000px;
     overflow: hidden;
@@ -216,7 +216,7 @@ body{
 
 /* /// CARDS /// */
 
-/* /// GALLERY /// */
+/* /// FOOTER /// */
 
 .footer{
     background: #f5576c;
@@ -262,4 +262,83 @@ body{
     cursor: pointer;
     color: tomato;
     background: #fff;
+}
+
+/* /// FOOTER /// */
+
+/* /// MEDIA /// */
+
+@media screen and (max-width:800px) {
+    .hero__h1{
+        font-size: 50px;
+        text-align: center ;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .info__p{
+        text-align: center;
+    }
+
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website__img{
+        width: 100%;
+    }
+
+    .website__text{
+        width: 100%;
+    }
+
+    .cards__card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .gallery__img{
+        width: 48%;
+    }
+
+    .last__img{
+        width: 98%;
+
+    }
+
+    .last__text{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero__h1, .title{
+        font-size: 30px;
+    }
+
+    .hero__p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .website__text{
+        margin-bottom: 30px;
+    }
+
+    .cards__card{
+        height: 380px;
+    }
+
+    .gallery__img{
+        width: 97%;
+    }
 }
